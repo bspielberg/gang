@@ -5,7 +5,24 @@ namespace SpriteKind {
 
 // ==========================================================
 // JUGENDHERBERGE XANTEN
-// SPIELBARER TESTBUILD
+// main.ts
+//
+// A ROT:
+// - läuft 5 Sekunden automatisch
+//
+// B BLAU:
+// - danach steuerbar
+// - Steuerkreuz = laufen
+// - A = Tür erkennen
+// - B = Kissen werfen
+//
+// Hintergrund:
+// assets.image`gang`
+// ==========================================================
+
+
+// ==========================================================
+// SPIELPHASEN
 // ==========================================================
 
 const PHASE_A = 1
@@ -13,24 +30,30 @@ const PHASE_B = 2
 
 let phase = PHASE_A
 
+
+// ==========================================================
+// STATUS
+// ==========================================================
+
 let aStart = 0
 let bStart = 0
 
-let hatKissen = false
 let blickRichtung = 1
 
+let hatKissen = false
+
 let putzfrauAktiv = true
+
 let putzfrauKommtWieder = 0
+
 let schutzBis = 0
 
 
 // ==========================================================
-// HINTERGRUND-ASSET
+// HINTERGRUND
 // ==========================================================
 
-// WICHTIG:
-// Das Asset in GitHub / MakeCode muss "gang" heißen.
-
+// Das Asset aus gang.ts
 scene.setBackgroundImage(
     assets.image`gang`
 )
@@ -40,19 +63,22 @@ scene.setBackgroundImage(
 // SPIELER
 // ==========================================================
 
-let spieler = sprites.create(img`
-    . . . 2 2 2 2 . . .
-    . . 2 2 2 2 2 2 . .
-    . 2 2 2 2 2 2 2 2 .
-    . . . 5 5 5 5 . . .
-    . . 5 5 5 5 5 5 . .
-    . . . 2 2 2 2 . . .
-    . . 2 2 2 2 2 2 . .
-    . 2 2 2 2 2 2 2 2 .
-    . . 2 2 2 2 2 2 . .
-    . . 2 2 . . 2 2 . .
-    . 2 2 . . . . 2 2 .
-`, SpriteKind.Player)
+let spieler = sprites.create(
+    img`
+        . . . 2 2 2 2 . . .
+        . . 2 2 2 2 2 2 . .
+        . 2 2 2 2 2 2 2 2 .
+        . . . 5 5 5 5 . . .
+        . . 5 5 5 5 5 5 . .
+        . . . 2 2 2 2 . . .
+        . . 2 2 2 2 2 2 . .
+        . 2 2 2 2 2 2 2 2 .
+        . . 2 2 2 2 2 2 . .
+        . . 2 2 . . 2 2 . .
+        . 2 2 . . . . 2 2 .
+    `,
+    SpriteKind.Player
+)
 
 spieler.setStayInScreen(true)
 
@@ -61,20 +87,23 @@ spieler.setStayInScreen(true)
 // PUTZFRAU
 // ==========================================================
 
-let putzfrau = sprites.create(img`
-    . . . 8 8 8 8 . . .
-    . . 8 8 8 8 8 8 . .
-    . 8 8 8 8 8 8 8 8 .
-    . . 8 8 8 8 8 8 . .
-    . . . 5 5 5 5 . . .
-    . . 5 5 5 5 5 5 . .
-    . . . a a a a . . .
-    . . a a a a a a . .
-    . a a a 1 1 a a a .
-    . . a a 1 1 a a . .
-    . . a a a a a a . .
-    . . a . . . . a . .
-`, SpriteKind.Putzfrau)
+let putzfrau = sprites.create(
+    img`
+        . . . 8 8 8 8 . . .
+        . . 8 8 8 8 8 8 . .
+        . 8 8 8 8 8 8 8 8 .
+        . . 8 8 8 8 8 8 . .
+        . . . 5 5 5 5 . . .
+        . . 5 5 5 5 5 5 . .
+        . . . a a a a . . .
+        . . a a a a a a . .
+        . a a a 1 1 a a a .
+        . . a a 1 1 a a . .
+        . . a a a a a a . .
+        . . a . . . . a . .
+    `,
+    SpriteKind.Putzfrau
+)
 
 putzfrau.setStayInScreen(true)
 
@@ -122,10 +151,11 @@ function bildB(): Image {
 
 
 // ==========================================================
-// A START
+// A STARTEN
 // ==========================================================
 
 function starteA() {
+
     phase = PHASE_A
 
     spieler.setImage(
@@ -134,15 +164,17 @@ function starteA() {
 
     spieler.setPosition(
         80,
-        75
+        76
     )
 
+    // A nicht steuerbar
     controller.moveSprite(
         spieler,
         0,
         0
     )
 
+    // automatische Startbewegung
     spieler.vx = 25
     spieler.vy = 10
 
@@ -154,20 +186,29 @@ function starteA() {
     putzfrau.vx = 0
     putzfrau.vy = 0
 
-    aStart = game.runtime()
+    putzfrau.setFlag(
+        SpriteFlag.Invisible,
+        false
+    )
+
+    putzfrauAktiv = true
+
+    aStart =
+        game.runtime()
 
     info.setScore(5)
 }
 
 
 // ==========================================================
-// B START
+// B STARTEN
 // ==========================================================
 
 function starteB() {
+
     phase = PHASE_B
 
-    // A-Bewegung beenden
+    // A-Bewegung stoppen
     spieler.vx = 0
     spieler.vy = 0
 
@@ -177,17 +218,19 @@ function starteB() {
 
     spieler.setPosition(
         80,
-        80
+        82
     )
 
-    // JETZT STEUERUNG EINSCHALTEN
+    // WICHTIG:
+    // Jetzt wird B steuerbar
     controller.moveSprite(
         spieler,
         75,
         65
     )
 
-    bStart = game.runtime()
+    bStart =
+        game.runtime()
 
     hatKissen = true
 
@@ -206,9 +249,10 @@ function starteB() {
     putzfrau.vx = 0
     putzfrau.vy = 0
 
-    // 4 Sekunden Schutz
+    // B hat 4 Sekunden Schutz
     schutzBis =
-        game.runtime() + 4000
+        game.runtime() +
+        4000
 
     info.setScore(0)
 
@@ -221,11 +265,37 @@ function starteB() {
 
 
 // ==========================================================
+// A AUTOMATISCHE BEWEGUNG
+// ==========================================================
+
+game.onUpdateInterval(
+    600,
+    function () {
+
+        if (
+            phase != PHASE_A
+        ) {
+            return
+        }
+
+        spieler.vx =
+            randint(-35, 35)
+
+        spieler.vy =
+            randint(-20, 20)
+    }
+)
+
+
+// ==========================================================
 // A LÄUFT 5 SEKUNDEN
 // ==========================================================
 
 game.onUpdate(function () {
-    if (phase != PHASE_A) {
+
+    if (
+        phase != PHASE_A
+    ) {
         return
     }
 
@@ -245,47 +315,40 @@ game.onUpdate(function () {
 
     info.setScore(rest)
 
-    // A im sichtbaren Bereich halten
-    if (spieler.x < 15) {
+    // A im Gang halten
+
+    if (
+        spieler.x < 15
+    ) {
         spieler.vx = 30
     }
 
-    if (spieler.x > 145) {
+    if (
+        spieler.x > 145
+    ) {
         spieler.vx = -30
     }
 
-    if (spieler.y < 60) {
-        spieler.vy = 20
+    if (
+        spieler.y < 58
+    ) {
+        spieler.vy = 25
     }
 
-    if (spieler.y > 105) {
-        spieler.vy = -20
+    if (
+        spieler.y > 108
+    ) {
+        spieler.vy = -25
     }
 
-    if (zeit >= 5000) {
+    // Nach 5 Sekunden B starten
+
+    if (
+        zeit >= 5000
+    ) {
         starteB()
     }
 })
-
-
-// ==========================================================
-// A ÄNDERT RICHTUNG
-// ==========================================================
-
-game.onUpdateInterval(
-    600,
-    function () {
-        if (phase != PHASE_A) {
-            return
-        }
-
-        spieler.vx =
-            randint(-35, 35)
-
-        spieler.vy =
-            randint(-20, 20)
-    }
-)
 
 
 // ==========================================================
@@ -293,22 +356,25 @@ game.onUpdateInterval(
 // ==========================================================
 
 game.onUpdate(function () {
-    if (phase != PHASE_B) {
+
+    if (
+        phase != PHASE_B
+    ) {
         return
     }
 
-    // Zeit hochzählen
-    let bZeit =
+    let zeit =
         game.runtime() -
         bStart
 
     info.setScore(
         Math.floor(
-            bZeit / 1000
+            zeit / 1000
         )
     )
 
-    // Blickrichtung merken
+    // Blickrichtung
+
     if (
         controller.left.isPressed()
     ) {
@@ -321,29 +387,44 @@ game.onUpdate(function () {
         blickRichtung = 1
     }
 
-    // B im Gang halten
-    if (spieler.y < 58) {
+    // B im Bodenbereich halten
+
+    if (
+        spieler.y < 58
+    ) {
         spieler.y = 58
     }
 
-    if (spieler.y > 108) {
+    if (
+        spieler.y > 108
+    ) {
         spieler.y = 108
     }
 })
 
 
 // ==========================================================
-// PUTZFRAU VERFOLGT B
+// PUTZFRAU
 // ==========================================================
 
 game.onUpdate(function () {
-    if (phase != PHASE_B) {
+
+    // während A keine Verfolgung
+
+    if (
+        phase != PHASE_B
+    ) {
         putzfrau.vx = 0
         putzfrau.vy = 0
+
         return
     }
 
+
+    // Putzfrau nach Treffer weg
+
     if (!putzfrauAktiv) {
+
         putzfrau.vx = 0
         putzfrau.vy = 0
 
@@ -351,6 +432,7 @@ game.onUpdate(function () {
             game.runtime() >=
             putzfrauKommtWieder
         ) {
+
             putzfrauAktiv = true
 
             putzfrau.setFlag(
@@ -364,11 +446,15 @@ game.onUpdate(function () {
             )
 
             schutzBis =
-                game.runtime() + 2000
+                game.runtime() +
+                2000
         }
 
         return
     }
+
+
+    // Spieler verfolgen
 
     let dx =
         spieler.x -
@@ -380,18 +466,32 @@ game.onUpdate(function () {
 
     let tempo = 13
 
-    if (dx > 6) {
-        putzfrau.vx = tempo
-    } else if (dx < -6) {
-        putzfrau.vx = -tempo
+
+    if (
+        dx > 6
+    ) {
+        putzfrau.vx =
+            tempo
+    } else if (
+        dx < -6
+    ) {
+        putzfrau.vx =
+            -tempo
     } else {
         putzfrau.vx = 0
     }
 
-    if (dy > 6) {
-        putzfrau.vy = tempo
-    } else if (dy < -6) {
-        putzfrau.vy = -tempo
+
+    if (
+        dy > 6
+    ) {
+        putzfrau.vy =
+            tempo
+    } else if (
+        dy < -6
+    ) {
+        putzfrau.vy =
+            -tempo
     } else {
         putzfrau.vy = 0
     }
@@ -407,11 +507,15 @@ sprites.onOverlap(
     SpriteKind.Putzfrau,
     function () {
 
-        if (phase != PHASE_B) {
+        if (
+            phase != PHASE_B
+        ) {
             return
         }
 
-        if (!putzfrauAktiv) {
+        if (
+            !putzfrauAktiv
+        ) {
             return
         }
 
@@ -422,7 +526,10 @@ sprites.onOverlap(
             return
         }
 
-        // Für Test noch kein Game Over
+
+        // Test:
+        // noch kein endgültiges Game Over
+
         spieler.sayText(
             "ERWISCHT!",
             600,
@@ -431,7 +538,7 @@ sprites.onOverlap(
 
         spieler.setPosition(
             80,
-            80
+            82
         )
 
         putzfrau.setPosition(
@@ -440,42 +547,71 @@ sprites.onOverlap(
         )
 
         schutzBis =
-            game.runtime() + 2500
+            game.runtime() +
+            2500
     }
 )
 
 
 // ==========================================================
-// A-TASTE = TÜR ERKENNEN
+// A-TASTE
+// TÜR ERKENNEN
 // ==========================================================
 
 controller.A.onEvent(
     ControllerButtonEvent.Pressed,
     function () {
 
-        if (phase != PHASE_B) {
+        if (
+            phase != PHASE_B
+        ) {
             return
         }
 
         let tuer = ""
 
-        if (spieler.x < 28) {
+
+        // Spieler ganz links
+
+        if (
+            spieler.x < 28
+        ) {
+
             tuer = "4A"
-        } else if (spieler.x < 55) {
+
+        } else if (
+            spieler.x < 55
+        ) {
+
             tuer = "KUECHE"
-        } else if (spieler.x < 76) {
+
+        } else if (
+            spieler.x < 76
+        ) {
+
             tuer = "LEHRER"
-        } else if (spieler.x < 100) {
+
+        } else if (
+            spieler.x < 100
+        ) {
+
             tuer = "PUTZ"
-        } else if (spieler.x < 132) {
+
+        } else if (
+            spieler.x < 132
+        ) {
+
             tuer = "BAD"
+
         } else {
+
             tuer = "4B"
         }
 
+
         spieler.sayText(
             tuer,
-            600,
+            700,
             false
         )
     }
@@ -483,18 +619,25 @@ controller.A.onEvent(
 
 
 // ==========================================================
-// B-TASTE = KISSEN WERFEN
+// B-TASTE
+// KISSEN WERFEN
 // ==========================================================
 
 controller.B.onEvent(
     ControllerButtonEvent.Pressed,
     function () {
 
-        if (phase != PHASE_B) {
+        if (
+            phase != PHASE_B
+        ) {
             return
         }
 
-        if (!hatKissen) {
+
+        if (
+            !hatKissen
+        ) {
+
             spieler.sayText(
                 "KEIN KISSEN",
                 400,
@@ -504,7 +647,10 @@ controller.B.onEvent(
             return
         }
 
-        hatKissen = false
+
+        hatKissen =
+            false
+
 
         let wurf =
             sprites.createProjectileFromSprite(
@@ -518,6 +664,7 @@ controller.B.onEvent(
                 -blickRichtung * 120,
                 0
             )
+
 
         wurf.setKind(
             SpriteKind.Wurf
@@ -533,32 +680,48 @@ controller.B.onEvent(
 sprites.onOverlap(
     SpriteKind.Wurf,
     SpriteKind.Putzfrau,
-    function (wurf, frau) {
+    function (
+        wurf,
+        frau
+    ) {
 
-        if (phase != PHASE_B) {
+        if (
+            phase != PHASE_B
+        ) {
             return
         }
+
 
         wurf.destroy()
 
-        if (!putzfrauAktiv) {
+
+        if (
+            !putzfrauAktiv
+        ) {
             return
         }
 
-        putzfrauAktiv = false
+
+        putzfrauAktiv =
+            false
+
 
         frau.vx = 0
         frau.vy = 0
+
 
         frau.setFlag(
             SpriteFlag.Invisible,
             true
         )
 
-        // 2 Minuten verschwunden
+
+        // 2 Minuten weg
+
         putzfrauKommtWieder =
             game.runtime() +
             120000
+
 
         spieler.sayText(
             "TREFFER!",
@@ -570,7 +733,7 @@ sprites.onOverlap(
 
 
 // ==========================================================
-// START
+// SPIELSTART
 // ==========================================================
 
 starteA()
