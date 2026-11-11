@@ -1,0 +1,13 @@
+{
+  "name": "Jugendherberge",
+  "description": "",
+  "dependencies": {
+    "device": "*"
+  },
+  "files": [
+    "main.ts",
+    "gang.ts",
+    "README.md"
+  ],
+  "preferredEditor": "tsprj"
+}
