@@ -1,4 +1,576 @@
-namespace projectImages {
-    //% fixedInstance
-    export const gang = image.ofBuffer(hex`e4a07800c4ec4e4434ddddddddddddddbdee969999d1dd7bce4c44e4febcdddddddddddd77cccccccccccccccccccccc4444f4eeffffffcccccfcccccccccccce4ec4e4444dddddddddddddd4dee9c999999ddbdce4c4444fedcddddddddddbdc7ccccccccccccccccccccec444ef4ecffffcfccfccccccccccccbcc44ecbe4444d3dddddddddddddd4ebebbbbbbbbebeeece4eefedbdddddddddd7dc7cccccccccccccccccccc4ee444feffffffcccccfcccccccccccbcc44c4be4444d3ddddddddddddddedeeeeeeeeeeeeeeeeeeeeeedddddddddddd7dccccccccccccccccccccfc44e444e4eeffffccfccfcccccccccccccc4bc4ee4444d4dddddddddddddddddddddddddddddddddddddddddddddddddd7bccccccccccccccccccccec444e44f4eeffffffffffffffcccccbcccc4ce4ec4b44d4ddddceccceccccccccccccccccccccccccccccccccccccccccffffffffffffffffffffffef444444f4eeffcceeeeeeeefecccccccbccec44ec4e44d4ddddeffffeefeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee4ee44444f4ffffefeeeeeefcfccccccccbcccc44cbbe4434dddd4feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee44444444e4eeef4444444444fecccccbcbcccc4bc4ee4444ddddeeeeeeefeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee444e4444e4feffffffffffcfcfccbccccbcccc4cb4ec4444ddddebe4eeefeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee4e44444444eefeccffccccccccccccbbcbcbccccec44ec4b44ddddedeeeefeffefeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeefe4ee44444e4eecffccfccccccccccbcbbcbcbccccec44cb4e44d3ddedeeeefeffefeeeeeefeffffffffffefeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee44444444eefeccfcccccccccccccbbbbcccbcccccc4ee4be44d4dddd4eeefeffefeeeeeeeeeeeeeeeeeefeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee4f44444444eefecccfccccccbcccbcbbbbcbcbcccbcc4ce4bcdbdddddd4eeefeffefeeeee4be1111d11dd1feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee4e444444e4eecffcccccccccbcccbbbbbbcbcbcccbccec44bcdbddddddede4eeffffeeeee4ee11d1fc1cd1feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee4e444444eefeffffcfcccccccbbcbbbbbbbbcbccbbcccc44eb3bddddddede4eeffffeeeee4eed1fbfc1cd1feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee44444444eeffffffcfccccccccbcbbbbbbbbcbccbbcccc4ec4beddddddede4eecfffeeee44eefdcffbbcddfeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee44444e4eeefeefeccccccccbcbcbbbbbbbbcbccbbcbcc4cb4bcd4ddddbd4eeefeffeeee4eeecdccfccfddfeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee444444eefeffffcfccccccccbbbcbbbbbbbbcbccbbbbccec44ecdbdddddd4eeefefeecee4eee1d11b1dbd1feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee444444eeffeececcccccccbcbbbcbbbbbbbbcbbcbbbbcccc44ee4bddddddeeeefeffecee4eee1b11fcffddfeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee4444e4eeefeeccccccccccbbbcbcbbbbbbbbcbbbbbbbcbcc4ec44eddddddede4feffefee4eeedbfffcdc11feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee4444eefeffffcfffccccbcbbbcbcbbbbbbbbcbcbbbbbcbcc4ce4bed3ddddede4eeffcfee4ee4becffb1c11feeeeeeeeeeecbeceeeeeeeeeeeeeeeeee44e4eeffffeceefecccccbbbbcbcbbbbbbbbcbccbbbbbbccec44bcdbdddded4eeeffffeeeee4debdfcff1dfeeeeeeeeececdeceeeeeeeeeeeeeeeeee44e4eeffeeeeeefeccbcbbbbbbbcbbbbbbbbccbcbbbbbbcbcc4eee3bdddddd4eeefeffeeeee41e11d1ddd1feeeeeeeeececdefeeeeeeeeeeeeeeeeee44eefe4e444444feccbbbbbbbbbcbbbbbbcbcbbcbbbcbbcbcc4ec44bdddddd4eeefeffeeee44eeeeeeeeeeeeeeeeeebebbcbccccefeeeeeeeeeeeeeee4eeffffffffffcfccbbbbbbbbbcbbbbbbbccbbcbbbcbbcbccbce4bed3ddddede4feffeceeeeeeeeeeeeeeeeeeeeeededbcbcbbbeeeeeeeeeeeeeeeeeefeeececccccccccbbbbbbbbbbcbbbbccbbcbccbbbcbbbbcccc44ecddddddede4eeffffffefeeeeeeeeeefeffffffcfccccccccffffffffffffffffffffffcfccccccbccbbbbbbbbbbcbbcbbcbbcbbcbbbcbbbbcbcc4eebd4ddddbde4eeffffeeeeeeeeefeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeefecfcccccbbbcbbbbbbbbbbcbbbcbbbbcbbcbbbbbbbbbbcc4ce44bddddbd4eeeefeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeccccbbbcbbcbbbbbbbbbbcccbbbbbbcbbcbbbbbbbbbbccece4bed3dddd4ee44e242444222222222222222222224422222222224422eeeeeeeeeeeeeecccbcbbbbbcbbbbbbbbbccbbbbbbbbcbbbbbbbbbbbbbcccc44bc34d3ddeeeeefeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeececccbbcbbbbcbbbbbbbbbbcbbbbbbbbcbbcbbbbbbbbbbcbcc4ece3bd3ddbdbbdddddddddddddddddddddddddddd77cccccccccccccccccccc4ceececccccbbbbbbbcbbbbbbbcbbcbbbbbbbbcbbbbbbbbbbbbbbbcc4ec43b33dddddddddddddddddddddddddddddddddd77cccccccccccccccccccc4eeeccccbcccbbbbbbcbbbbbcbbbbcbbbbbbbbcbbbbbbbbbbbbbbbccece4be33ddddddddddddeeeeeeeeeeeebeddddddddc7ccccccccccccccccccece4cebccccccbbbbbbbcbbbbbbcbbbcbbbbbbbbcbbbbbbcbbbbbbbbcbcc44bc33d3ddddddddddeebbbbebee44beddddddddc7cccccccccccccccccc4ceecebcbcbccbbbbbbbcbbbcbbbbbbcbbbbbbbbcbbbbbbcbbbbbbbbbbcc4cee3b33dddddddddd4bbcddc77c47bcdddddd7dc7cccccccccccccccccc44eeccbcccbbcbbbbbbbbbbbbcbbbbbcbbbbbbbbcbbbbbbcbbbbbbbbbbccecc43b33ddddddddddedbcbd777747dcdddddd7dccccccccccccccccccece4ceccbbbcbbcbbbbbbbcbbcbbbbbbbcbbbbbbbbcbbbbbbcbbbbbbbbbbcbece43e33d3ddddddddedbedde7ee47dedddddd7dcccccccccccccccccc4eeeccbccbbcbbbbbbbbbbcbbbbbbbbbbcbbbbbbbbcdbbbbbcbbbbbbbbbbcbcc4ebc3333ddddddddbdbedb77eceedcddddddc7cccccccccccccccccce4ceccbcbcbcbbbbbbbbbbccbbbbbbbbbcbbbbbbbbcdbbbbbcbbbbbbbbbbbbcc4ccebb3b3333d3ddbdeeeeeeeeeedbddddddc7cccccccccccccccc4ce4cebcccbcbcbbbbbbbbbccbbbbbbbbbbcbbbbbbbbcbbbbcbcbbbbbbbbbbbbcbecc4bbbb33d3d3ddddddddddddddddddddddc7cccccccccccccccc4eeeccbcccbbbcbbbbbbcbbbcbbbbbbbbbbcbbbbbbbbbbbbcbbcbbbbbbbbbbbbcbece4bcbb3333ebeeeeeebbbbbbbbbbbbbbebccccccccccccfcffcfe4ceccbcbcbbbcbbbbbbbcbbcbbbbbbbbbbcbbbbbbbbbdcbbbbcbbbbbbbbbcbbcbcc4ebcbb3b33fbffefeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeefefecfccccbbbbbcbbbbbcbbbbcbbbbbbbbbbbbbbbbbdbcbbcbbccbbbbbbbbbcbbbbcc4ccebb3b33ebee4e444444444444444444444444444444444444e4bcbbbcbbbbbcbbcbbbbbbbcbbbbbbbbbbbbbbbbbcbccbbbbbcbcbbbbbbbcbbbbcbece4bb3333e3e4ffefeeffffffffefeeeeeeeeeeeeeeeeeeeeeecfbccbbcbbbbbcbbccbbbbbbcbbbbbbbdbdbbbdbbbbcbdbbbbbcbbbbbbbbbcbbbbcbccb4bcbb33ede4ffef4ebebdccdceeeeeeeeeeeeeeeeeeeeeeeeccbcbcbcbbbbbbcbbbbbbbbbbbbbbbbbdbdbdbcbbcbbbdbbbbbcbbbcbbbbbcbbbbbbcc4cbebbd3b3e4feef4ebec1cc1ceeeeeeeeeeeeeeeeeeeee4cebcccbbbcbbbbbbbbbbbbbbbbbbbbbbbbdbdbcbbcbbbbcdbbbbbcbbcbbbbbbcbbbbbbcbecc4bbd33d4efeefeebebbbb1ceeeeeeeeeeeeeeeeeeeeeeccbbbcbbbcbbbbbcbbbbbbbbbbbbbbbbbbddccbbbbbbbbbdbbbbbcbbbbbcbbbcbbcbbbcbcce4bb3bdd4efeefeebebbcc1ceeeeeeeeeeeeeeeeeeeeeeccccbcbbbbbbcbbcbbbbbbbbbbbbbbbbdbcbbcbbbbbbbbbdbbbbbcbbbbcbbbbcbbcbbbbbcc4ebcd3ddebeecfeee4c1bb1ceeeeeeeeeeeeeeeeeee4cebcbcbcbbbbbbbbbbbbbbbbbbbbbbbbdbcbdbbbbbbbbbbbbdbbbbbbbbbbbbbcbcbbcbbbbbcb4cbeddddede4ffeee4b1cc1beeeebeeceeeeeeeeeeeeccccbbbcbbbbbbbbbbbbbbbbbbbbbdbdcbbbdbbbbbbbbbbbbdbbbbbbbbbbbbcbbcbbcbbbbbcbccc43bddede4ffeee4b1ccdceeeedeefeeeeeeee4eeebcbcbbbcbbbbbbbbbbbbbbbdbbbbbdbbbbbbbbbbbbbbbbbbbdbbbbbbbbbbbbbbccbbcbbbbbbbcc4e3eddbde4feeeeecdbbdceeeebbbceceeeeeeeececcbcbbbbbbbcbbbbbbbbbbbbbbbdcbbbbbbbdbdbbbbbbbbbbdbbbbbbbbbbbbbbcbbccbbbbbbbcb4cbcd3dd4efeffffffffffffffffffffffffffffcfbcbcbbbbbbbbbbbbbbbbbbbbbdbbbbbbbbbbdbdbbbbbbbbbbdbbbbbbbbbbbbbbbbcccbbbcbbbcbeceb33dd4eee4ee4eeeee4e44444e4eeeeeeeeeeccbbbcbbbcbbbbbbbbbbbbbbbdbbbbbbbbbbbbdbdbbbbbddbbbdbbbbbbbbbbbbbbbbcbccbbcbbbbbcce4bbd3ebeeeeeeeeeeeeeeeecccccfffffefcfbcbbbbbbbcbbbbbbbbbbbbbdbcbbbbbdbbbbbbdbdbbbdbddbdbdbbbbbbdbbdbbbbbbbbccbbcbbbbbcc4ebc3bdddddddddddddddd7d7c77cccccce4ccbcbbbcbbbbbbbbbbbbbbbdbbbbbbbbbdbddddbdbdbdddbddbdbdbdbbbbddbdbbbbbcbbcbbccbbbbbcbecbebbd3dddddddddddddd7dccccccccecceccbbbbbbbbbbbbdbbbdbdbbbbbbbbbbdbdddbddddddbddddddbbbdbbbbbbddddbbbbbbbbcbcbcbbbbbbbccc4bbbbd3ddddddddddddc7cccccccceebcbcbbbbbcbbbbbbdbbbbdbcbbbdbddbddbddddddddddbddddddddbdccbbdbddddbbbbbbbbcbcbcbbbbbbbcceebbbb3bddddddddddddc7ccccccccceccbcbbbbbbbbbbbbdbbbbbbbbbbbbdbbddbddddddddddbddddddcbccbbbbfcccbeddbbbbbbcbbbcccbbbbbcbecbcbbbbeeeeeeeeeeeeeeeefeefeeccbcbbcbbbbbdbdbdbbbbbdbbbbbbbdddbddbddddddddddbddbbbbbbbdbbbbcfcb4ed4bbbbbbcbbbcbccbbbbbbecbebbbbeebebbbbbbbbbbbbbbbbcbccbcbbbbbbbbbbdbbdbbbbdbdbdbbdddddddbddddddddddbbbbbdbddbdbbbbbfecd445bbbbbbcbbbbbcbbbbbbbcbcecccceceeeeeeeeeeeeeeeeeececcbcbbbbbbbbbbbbbbbbbbbbbbbbbbdbddddddddddddddbbbbbbbbbbbbbbdbbfebdd45b4bbbbcbbbbbcbbcbbbbcbccbbbbbb3bddddddcdcccccceececcccbbbbbbbbbbbbbbbbbbbbbbbbbbdbddddddddddddddbbbbbbbbbbbbbbdbbfbb11ddbdbbbbbbbbbbbbcbbbbbcbccbbebeeeeeeeeeececcccecefeeccccbbbbbbbbbbbbbbbbbbbbbbbbbbdbddddddddddddddbdbbbbbbbbbbbbdbbfbb111dbdbbbbbbbbbbbbbbbcbbcbccbbebeeeeeeeeeeeeeeeeeeeceececcbbbbbbbbbbbbbbbbbbbbbbbbbbddddddddddddddddbbbbbbbbbbbbbbdbbfbb111dbdbbbbbbbbbbbbbbbcbbcbccbbebeedebbebeeceeeeeeecceececcbcbbbbbbbbbbbbbbbbbbbbbbbbddddddddddddddddbbbbbbbbbbbbbbdbbfbb111dbdbbbbbbdbbbbbbbbbbbcbccbbebeedecbedeeeeeeeeeecceeccccbcbbbbbbbbbbbbbbbbbbbbbbbbddddddddddddddddbbbbbbbbbbbbbbdbbfbb111dbdbbbbbbddbbbbbbbbcbcbccbbebeedeccedeeeeeeeeeeccecccccccbbbbbbbbbbbbbbbbbbbbbbbbdbddddddddddddddbdbbbbbbbbbbbbdbbfbb111dbdbbbbebbbbbcbbbbbcbccbcbbebeedeccedeeeeeeeeeecceececcccbcbbbbbbbbbbbbbbbbbbbbbbddddddddddddddddbdbbbbbbbbbbbbdbbfbb111dbdbbbbcbcbbecbbbbbbbcbbcbbebeedecfedeeceeeeeeecceececcccbcbbbbbbbbbbbbbbbbbbbbbbdbddddddddddddddbdbbbbbbbbdbdddbbfbb111dbdbbbbcb4bb4cbbbbbbbcbbcbbebeeeeeeeeeeeeeeeeeeeceecececcccbbbbbbbbbbbbbbbbbbbbbbddddddddddddddddbdbbbbbbbbdddddbdfbb111dbdbbbbcb1d4dcbbbbbbbcbbcbbebeeeeeeeeeeeeeeeeeeeeeececcccccbebbbbbbbbbbbbbbbbbbbbdbddddddddddddddbdbbbbbbbbdddddbbfbb111dbdbbbbcb1dd1cbbbdbbbcbbcbbbbbbddddddddcbccccececeeccccccccecbbbbbbbbbbbbbbbbbbdbddddddddddddddddbbbbbbbbbbbbdddbdfbb111dbdbbbbcb1dd1cbcbecbbcbbcecbbbbbbbbbbbbcbccccecccccccccccccccbbbbbbbbbbbbbbbbbbbbdbddddddddddddddbbbbbbbbbbbbbbdbdfbb111dbdbbbbcb1dd1cbcb5bb4cbbceeeeeeeeeeeeeeebcdccccccccccccccccccbcbbbbbbbbbbbbbbbbdbddddddddddddddbdbbbbbbbbbbbbbbdbdfbb111dbdbbbbcb1dd1cbcbddbdccbcceb6bbcbbbeeceebbdbbbbccccccccccccccccbbbbbbbbbbbbbbbbbbddddddddddddddbdbbbbbbbbbbbbdbdbbfbb111dbdbbbbcb1dd1cbcb1dbdbcbe6e9999e99979e7ebcdbbbbccccccccccccccccbcbbbbbbbbbbbbbbbbdbddddddddddddbbbbbbbbbbbbbbbbdbdfbb111dbdbbbbcb1dd1cbcb1dbddcbb6e9999e99999e7ebcdbbbbccccccccccccccccbcbbbbbbbbbbbbbbbbbbbbdbddddddbdbbbbbbbbbbbbbbbbdbbfbb111dbdbbbbcb1dd1cbcb1dbddcbb6e9999e99979e7ebcdbbbbccccccccccccccccccbbbbbbbbbbbbbbbbbbbbbbbbddbbbbbbbbbbbbbbbbbbbbdbbfbb111dbdbbbbcb1dd1cbcb1dbddcbbceccccebbbeeeeebcdbbbbccccccccccccccccbcbbbbbbbbbbbbbbbbbbbbbbbbbbddbbbbbbbbbbbbbbbbbbdbbfbb111dbdbbbbcb1dd1cbcb1dbddcbbce66bbebbbeeeeebcdbbbbccccccccccccccccbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdbbfbb111dbdbbbbcb1dd1cbcb1dbddcbb6e9999e99977ecebcdbbbbccccccccccccccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdbbfbb111dbdbbbbcb1dddcbcb1dbddcbe6e9999e999d9e7ebcdbbbbccccccccccccccbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdbbfbb111dbdbbbbcb1dddcbcb1dbdccee6e9991e99979e7cbcdbbbbccccccccccccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdbbfbb111dbdbbbbcb1dd1cbcbdbb4cbecceb6bbcbbbeefecbcdbbbbccccccccccccbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdbbfbb111dbdbbbbcb1dd1cbcbecbbcbececeeeeeeeeeeeeebcdccccccccccccccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdbbfbb111dbdbbbbcb1dddcbcbbbbbcbbcbbbbdbddddddddcbccccecccccccccccbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdbbfbb111dbdbbbbcb1bddcbbbbbbbcbbcbbbbbbdbddddddcbccccececceccccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdbbfbb111dbdbbbbcb4bbdcbbbbbbbcbbcbbebeeeeeeeeeeeeeeeeeeeeeeccccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdbbfbb111dbdbbbbcbcbbecbbbbbcbccbcbbebeeefeeebeeceeceffecfeeccccbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdbbfbb111dbdbbbbcbeebbcbbbbbcbcbbcbbebeedecfedeeceeeeeeecceeccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbddbbbbbbbbdbbfbb111dbdbbbbbbddbbcbbbbbbccbbcbbebeedecbedeeeeeeeeeeccccccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbddbdbbbbbbdbbfbb111dbdbbbbbbddbbcbbbbbbbcbccbbebeedeccedeeeeeeeeeeccccccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdbddddbbbbbbdbbfbb111dbdbbbbbbbbbbcbbbbccbcbccbbebeedebbedeeeeeeeeeeccccccbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbddddbbbbbbdbbfbb11d4b4bbbbbbbbbbcbcbbcbbcbccbbebeedebcebeeceeeeeeeccccccbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdbddddbbbbcbdbbfebdd4db4bbbbbbbbbbcbbcbcbbcbccbbebeeeeeeeeeeeeeeeeeeccccccbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdbbbbdbddddbdbbbbdbbfecd444bbbbbbcbbbbbcbbbbcbbcbccbbcbeceeeeeeeefeffffefccccccbcbbbbbbbcbbbbbbdbbbdbdbbbbbbbdbbbbdddbdddbddbdbbdddbdbdbbbbcccbeed4bbbbbbcbbbbbbcbbbcbbcbceccccebeeeeeeeeeececccccecccccbbbbbbbbbbbbbbbdbbbdbbbdbbbbbbbbbbbbbbddbdbdbdbbddbbdbdbdbbfcffbbddbbbbbbcbbbcccbbbbbbbccbebbbbeebbbbbbbbbbbbbbbbbbcbccbcbcbbbbbbbbbbbbbbbbdbbbbbbdbdbbbbbbbbbbdbdbdbbbddbbbbbdbbbbdbddddbbbbbbbbcbcbcccbbbbbcbecbcbbbbeeeeeeeeeeeeecfeefccefccbcccbbbbbbbbbcbbbbbbbbbbbbbbbdbdbbbbbbbbbbdbbbbbbdbbbbbdbbbb3bddddbbbbbbbbcbcccbbbbbbbcbeebbbb3bddddddddddddc7cccccceccebcbcbcbbbbbbbbbbbbbbbbbbbbbbbddbbdbcbbbbbbdbbbbbbbbbbbbdbbbbbbddbdbbbbbbbbcbbccbbbbbbbcccbbb3bd3ddddddddddddc7cccccccceeccbccbbbbcbbbbbbbcbbbbbbbbbbbdbbdbcdbcbbbbbbbbbbbbbbbbbdbbbbbbdbbdbbbbbbbbccbbcbbbbbcb4cbcbbd3ddddddddddddddc7cccccccceccebcbbbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdbbbbbbbbbbbbbbbbbdbbbbbbbbbbbbbbbbcbcbbbcbbbbbcceebc3bdddddddddddddddd77ccccccccece4cccbbbbcbbbcbbdbbbbbbbbbbbbbbbbbbbbbbdcbbbbbbbbbbbbbbdbbbbbbbbbbbbbbbbbccbbbcbbbbbccc4bbd3bddbdddddddddddd7d77c7cccccceebccbbbccbbbcbbbbbbbbbbbbbbbbbbbbbbbbbbbdcbbcbbbbbbbbcbbbbbbbbbbbbbbbccbbcbbbbbbbcbecce3bdd4eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeccbbbcbcbcbbbbbbbbbcbbbbbbbbbbbbbbbbbbddccbbbbbbbbbdbbbbbbbbbbbbbbbcbbcbbbbbbbcb4cbcd3dd4eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeecfbbbccbbcbbbcbbbbbbbbbbbbbbbbbbbbbbbbdbdbcbbbbbbbcbbbbbbcbbbbbbcbbcbbcbbbbbcbcceb3bdddd4efeffffffffffffffffffffffffffffcfbcbcbbbcbbbbbbbbbbcbbbbbbbbbbbbbbbbbbbdbddcbbcbbbbbbbbbbbbbbbbbcbcbbcbbbbbcbecc43bddede4ffeeeebdbbbdeeeebbbceceeeeeeeecebcbcbbbcbbbcbbbbbbbbccbbbbbbbbbbbbbbdbbbbbdbcbbcbbbbbbbbbbbbbbbbbcbbcbbbbbcc4cbe33ddede4ffeee4cbcfbbeeeedeefeeeeeeeeeeeeccbcbbbcbcbcbbbbbbbbbbbcbbbbbbbbbbbbbbbbbbbbdbcbccbbbbbcbbcbbcbbbcbbcbbbbbcc4ebcd3ddede4ffeee4b1cbbdeeeebeeceeeeeeeeeeeecebcbbbcbbbcbbbbbbbbbbcbbbbbcbbbbbbbbbbbbbbbbbbbcbccbbbcbbcbbbbbbcbbcbbbcbecc43bd3dd4ef2efeeb4fbccbdeeeeeeeeeeeeeeeeeeeececcbbbcbbbcbbbbbcbbbbbbbbbbcbbbbbbbbbbcbbbbbbbbbdcbbbbcbbbbbbbbbcbbbbbbccbcce3b33dd4efeefeebebdccbbeeeeeeeeeeeeeeeeeeeeeeccbcbcbbccbcbbbcbbbbbbbbbccbbbbbbbbbbcbbbbbbbbbbbbbbbcbbbbbbbbbcbbbbbbcc4ebe3bd3bd4efeefeebecbcbbceeeeeeeeeeeeeeeeeeeeeececcbcbbbccbbbbcbbbbbbbbcbbbbbbbbbbbbcbbbbbbbbbbbbbbccbcbbbbbbbcbbbbcbcce4bcbb33e3e4feef4edeb1ccbdeeeeeeeeeeeeeeeeeeeeeeeeccbcbbbcbbbcbcbbbbbbbbdbcbbbbbbbbbbcbbbbbbbbcbbbbbbcbbbbbbbbbcbbbbcbecc4bb3b33e3e4ffefeeeeeeeeeeefeeeeeeeeeeeeeeeeeeeeeecfccbbbcbbcbbcbbbbbbbbbbcbbcbbbbbbbcbbbbbbbbcbbbcbbcbbbbbbbbbcbbbbcc4cbebb3b33ebeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeccbcbcbbbbbcbbbbbbbbbbbbbbbcbbbbbcbbbbbbbbcbbbccbcbbbbbbbbbcbbcbcc4bbcbb3b33ebeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeebfccbcbbbbccbbbbbbbbbbcbbbcbbbbbbcbbbbbbbbcbbbbcbcbbbbbbbbbbbbcbece4bbbb3b33ebeeeeeeeeeeeeeeeeeeeeceffffffffffffffffffeececcbcbcbbbcbccbbbbbbbcbbbbbcbbbbcbbbbbbbbcbbbbbbcbbbbbbbbbbbbcc4cc43bbb333333ddddddddddddddddddddddc7cccccccccccccccc4eeeccbcbcbbbccbcbbbbbbbcbbbbbbbbcbcbbbbbbbbcbbbbbbcbbbbbbbbbbcbcc4ebcbb3b3333d3ddddbbbbbbbbbbdbddddddc7ccccccccccccccccece4ceccccbbbcbbccbbbbbbbbbbbbbbcdbcbbbbbbbbcbbbbbbcbbbbbbbbbbcbcce4bc333333ddddddedeeeeeeeeeebeddddddc7cccccccccccccccccc44ceccccbcbcbbcbbbbbbbcbbbbbbbbbccbbbbbbbbcbbbbbbcbbbbbbbbbbcc4cc43b33d3dddddddded9cddbbbd4bbedddddd77cccccccccccccccccc4ceeccccbcbcbbbbbcbbbbcbbbbbbbbbbcccbbbbbbcbbbbbbcbbbbbbbbbbcc4cee3b33ddddddddddeb9bbbcbbbbbeedddddd7dccccccccccccccccccece4ceccbcbcbbcbcbbbbbcbbbbbbbbbbcbdbcbbbbcbbbbbbcbbbbbbbbcccc44bc3333dddddddddd4e9bddddbd4beedddddd7dcccccccccccccccccccc4eeeccccccbbcbbbbbbbcbbbbbbbbbbcbbcbbcbbcbbbbbbcbbbbbbbbccece4be33d3ddddddddddee99d9bbbceceedddddd7dc7cccccccccccccccccceceececcccbccbbbcbbbcbbbbbbbbbbcbbbbccbbcbbcbbbcbbbbbbbbcc4cc43b33ddddddddddddeeeeeeeeeeeeceddddddddc7cccccccccccccccccccce4eebccccccbbbbbbccbbbbbbbbbbcbbbbbbcccbbcbbbcbbbbbbcbcc4eee3b33ddddddddddddbbbbbbbbbbbbbbdddddddd77cccccccccccccccccccc4eeecccccccbbbbbcbccbbbbbbbbbcbbbbbbcbccbbbbbcbbbbbbcccc44bc33d3dddddddddddddddddddddddddddddddddd77ccccccccccccccccccccece4cecccccbbbbbbbccbbbbbbbbbcbbbbbbbbcbccbbbcbbbbbbcc4ce4bbd3ddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeecffffffffffffffffffffffeeeecfcccbbbbbbbcbbcbbbbbbbcbbbbbbbbcbccbbbcbbbbbbcc4ec43bdddddd4ee44e4444444444444444444444444444444444444444444444444444eeeeccccbbbbbbcbcbbbbbbbbcbbbbbbbbcbcbbbbcbbbbcbcc4eeedbddddbd4eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeececcbcbbbbcbcbbcbbbbbcbbbbbbbbcbbcbbbcbbbbcccc44bcddddddbde4eeffffeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeefecbbcbbbbcbbbccbbbbbcbbbbbbbbcbbcbbbbbbcbcc4ce44eddddddede4eeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffccbcbcbbcbbbbbbcbbbcbbbbbbbbcbbcbbbbbbcbcc4ec44bddddddebe4feffefeeeeeeeeeeeeeeeeeeeeeebedbbcbdcbeeeeeeeeeeeeeeeeeeeeeefeccccbcbbcbbbbbcbbbbcbbbbbbbbcbccbbbbbbcccc44eedbdddddd4eeefeffeceeeeeeeeeeeeeeeeeeeeeedebdcbbbbbeceeeeeeeeeeeeeeeeeeeeeecfccbcbbcbbbbbbbbcbcbbbbbbbbcbccbbbbbbcccc44bcd4ddddbd4eeefeffeeeee4beddddddddedeeeeeececccdffffeeeeeeeeeeeeeeeeeeeeeeeefeccccbbcbbcbbbbcbbcbbbbbbcbcbccbbbbcbcc4cb4be3dd3ddede4eeffffeeeee4de1111bb11edeeeeeeeecec1eeeeeeeeeeeeeeeeeeeeeeeeeeeeeecfccbcccccbcbccbbcbbbbcbbbcbccbbbbcbcc4ec44bddddddede4eeffcfee4ee41e11fbcf11edeeeeeeeececdeceeeeeeeeeeeeeeeeeeeeeeee4eeececcccccbbbbbbbbccbbcbbbbbcbccbbbbcccc44ee3b3dddddede4eeffcfee4ee41efbdccc11edeeeeeeeeeecceeeeeeeeeeeeeeeeeeeeeeeeeeeee4eecfcccccccbbbbbbcbcbbbbcbcbccbbbbccecb4ec3bd3dddd4eeefeffecee4ee41effffffbfedeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef7eeeeeeee4eeececcccccccbbbbbccbbbbbcbcbccbbcbcc4ce4bed3dddddd4eeefefeecee4eee1bddddccddedeeeeeeeeeeeeeeeeeeeeeeeeeece77feeeeeeeeeeee4eeccccccccccbcbccbbcbbcbcbccbbcccc4bc4bbdddddded4eeefeffeeee4eee1bddddddddedeeeeeeeeeeeeeeeeeeeeeeeeee7e77efeeeeeeeeeeeeeececcccccccbcbcbbcbbbcccbccbbcccc44eedbddddddede4eeffffeeee4eeedbffffffbfedeeeeeeeeeeeeeeeeeeeeeeeeee5ee7efeeeeeeeeeeeeeefeccccccccbcbcbbbbbccccbcccbccec44bcdbddddddede4eeffffeeee44eedddff11dbfedeeeeeeeeeeeeeeeeeeeeeeeeee77f7eeeeeeefeeeeeee4eecfccccccbcbccbbbcccbcbcccbcc4ce4bcd4ddddddeeeeeeffcfeeeee4eeddcffcccbfedeeeeeeeeeeeeeeeeeeeeeeeefee5f7ef77f7eeeeeeee4eeefeccccccbcccbbbbcbcccbcccccc4bc4bed4dddddd4eeefeffefeeeee4ee11bddbcc1bedefeeeeeeeeeeeeeeeeeeeeeeefc7fe7f57feeecefcefeeeeeecfccccbcbcccccbbcccbcccccc44ce4e44d4ddbd4eeefefeefeeeee4eeddddddddddedefeeeeeeeeeeeeeeeeeeeee5eec7ef7ee7efeebcddbdcfeceefeccccccbcccccbccbccccccec44ec4e44ddddede4eefeffeceeeeeefeccccccccccfceeeeeeeeeeeeeeeeeeee7ee7fefe7e55feeeeefbbcbbbcbdbbbbcccbbcbcccccbcbccccccc4cb4ec4444ddddede4eefeffefeeeeeeffeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee7ff7feef7ee5fffffefbdcbbccbbbbddddbbcfcccccccccccbcccc44c4be4444dddde4e4eeefeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee7ff7efcf5ef7cff7fefcbfbbcbbbbbbbbbbccccccccccccccbccec44cebb4444ddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeefeccffffeeffefffcfffbfbbcbbbbbbbbbbbfccccccccccccbbc4c44ec4e44d4ddddefeefeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeefeff57feff57f7ffeeeebfbbcbbcbbbbbbcbfbcccccccccccbcc4ce4bc4b44d4ddddffffffffffffffffffffffffffffffffffffffffffffffffffffeffe7ee7cf7777feefeececcccccccccccccfccccccccccccbcc4bc4ee4444d4ddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeccffffef7e77ffef7e77f7ffffcfccccccccccccccfccccccccccccbcc44cebe4444d3dddddddddddddddddddddddddddddddddddddddddddddddddd7bccccef77ffff7f57f5ffcfffcfccccccccccccccfccccccccccccbcc44ecbe4444ddddddddddddddddddebeeeeeeeeeeeeeeeeeeeededddddddddd7bcccc7ff7ffccefe7fffefcfccfccfcccccccccccfccccccccccccbcce4ec4b4444dddddddddddddddd4d4eeeeeeeeeeeeeeeeeee4eced3dddddddd7dc7ccecfefceefeffff7efffcccccfcccccccccccffcccccccccccbcccbec4e4434ddddddddddddddddbd4ebc99ddddddddddddbd4ecedbddddddddbdc7cccccffceef7cffffffcfbcccccccccccccccccfcccccccccccbcc`);
+namespace SpriteKind {
+    export const Putzfrau = SpriteKind.create()
+    export const Wurf = SpriteKind.create()
 }
+
+// ==========================================================
+// JUGENDHERBERGE XANTEN
+// SPIELBARER TESTBUILD
+// ==========================================================
+
+const PHASE_A = 1
+const PHASE_B = 2
+
+let phase = PHASE_A
+
+let aStart = 0
+let bStart = 0
+
+let hatKissen = false
+let blickRichtung = 1
+
+let putzfrauAktiv = true
+let putzfrauKommtWieder = 0
+let schutzBis = 0
+
+
+// ==========================================================
+// HINTERGRUND-ASSET
+// ==========================================================
+
+// WICHTIG:
+// Das Asset in GitHub / MakeCode muss "gang" heißen.
+
+scene.setBackgroundImage(
+    assets.image`gang`
+)
+
+
+// ==========================================================
+// SPIELER
+// ==========================================================
+
+let spieler = sprites.create(img`
+    . . . 2 2 2 2 . . .
+    . . 2 2 2 2 2 2 . .
+    . 2 2 2 2 2 2 2 2 .
+    . . . 5 5 5 5 . . .
+    . . 5 5 5 5 5 5 . .
+    . . . 2 2 2 2 . . .
+    . . 2 2 2 2 2 2 . .
+    . 2 2 2 2 2 2 2 2 .
+    . . 2 2 2 2 2 2 . .
+    . . 2 2 . . 2 2 . .
+    . 2 2 . . . . 2 2 .
+`, SpriteKind.Player)
+
+spieler.setStayInScreen(true)
+
+
+// ==========================================================
+// PUTZFRAU
+// ==========================================================
+
+let putzfrau = sprites.create(img`
+    . . . 8 8 8 8 . . .
+    . . 8 8 8 8 8 8 . .
+    . 8 8 8 8 8 8 8 8 .
+    . . 8 8 8 8 8 8 . .
+    . . . 5 5 5 5 . . .
+    . . 5 5 5 5 5 5 . .
+    . . . a a a a . . .
+    . . a a a a a a . .
+    . a a a 1 1 a a a .
+    . . a a 1 1 a a . .
+    . . a a a a a a . .
+    . . a . . . . a . .
+`, SpriteKind.Putzfrau)
+
+putzfrau.setStayInScreen(true)
+
+
+// ==========================================================
+// A ROT
+// ==========================================================
+
+function bildA(): Image {
+    return img`
+        . . . 2 2 2 2 . . .
+        . . 2 2 2 2 2 2 . .
+        . 2 2 2 2 2 2 2 2 .
+        . . . 5 5 5 5 . . .
+        . . 5 5 5 5 5 5 . .
+        . . . 2 2 2 2 . . .
+        . . 2 2 2 2 2 2 . .
+        . 2 2 2 2 2 2 2 2 .
+        . . 2 2 2 2 2 2 . .
+        . . 2 2 . . 2 2 . .
+        . 2 2 . . . . 2 2 .
+    `
+}
+
+
+// ==========================================================
+// B BLAU
+// ==========================================================
+
+function bildB(): Image {
+    return img`
+        . . . 8 8 8 8 . . .
+        . . 8 8 8 8 8 8 . .
+        . 8 8 8 8 8 8 8 8 .
+        . . . 5 5 5 5 . . .
+        . . 5 5 5 5 5 5 . .
+        . . . 8 8 8 8 . . .
+        . . 8 8 8 8 8 8 . .
+        . 8 8 8 8 8 8 8 8 .
+        . . 8 8 8 8 8 8 . .
+        . . 8 8 . . 8 8 . .
+        . 8 8 . . . . 8 8 .
+    `
+}
+
+
+// ==========================================================
+// A START
+// ==========================================================
+
+function starteA() {
+    phase = PHASE_A
+
+    spieler.setImage(
+        bildA()
+    )
+
+    spieler.setPosition(
+        80,
+        75
+    )
+
+    controller.moveSprite(
+        spieler,
+        0,
+        0
+    )
+
+    spieler.vx = 25
+    spieler.vy = 10
+
+    putzfrau.setPosition(
+        20,
+        105
+    )
+
+    putzfrau.vx = 0
+    putzfrau.vy = 0
+
+    aStart = game.runtime()
+
+    info.setScore(5)
+}
+
+
+// ==========================================================
+// B START
+// ==========================================================
+
+function starteB() {
+    phase = PHASE_B
+
+    // A-Bewegung beenden
+    spieler.vx = 0
+    spieler.vy = 0
+
+    spieler.setImage(
+        bildB()
+    )
+
+    spieler.setPosition(
+        80,
+        80
+    )
+
+    // JETZT STEUERUNG EINSCHALTEN
+    controller.moveSprite(
+        spieler,
+        75,
+        65
+    )
+
+    bStart = game.runtime()
+
+    hatKissen = true
+
+    putzfrauAktiv = true
+
+    putzfrau.setFlag(
+        SpriteFlag.Invisible,
+        false
+    )
+
+    putzfrau.setPosition(
+        15,
+        108
+    )
+
+    putzfrau.vx = 0
+    putzfrau.vy = 0
+
+    // 4 Sekunden Schutz
+    schutzBis =
+        game.runtime() + 4000
+
+    info.setScore(0)
+
+    spieler.sayText(
+        "B - LOS!",
+        1000,
+        false
+    )
+}
+
+
+// ==========================================================
+// A LÄUFT 5 SEKUNDEN
+// ==========================================================
+
+game.onUpdate(function () {
+    if (phase != PHASE_A) {
+        return
+    }
+
+    let zeit =
+        game.runtime() -
+        aStart
+
+    let rest =
+        5 -
+        Math.floor(
+            zeit / 1000
+        )
+
+    if (rest < 0) {
+        rest = 0
+    }
+
+    info.setScore(rest)
+
+    // A im sichtbaren Bereich halten
+    if (spieler.x < 15) {
+        spieler.vx = 30
+    }
+
+    if (spieler.x > 145) {
+        spieler.vx = -30
+    }
+
+    if (spieler.y < 60) {
+        spieler.vy = 20
+    }
+
+    if (spieler.y > 105) {
+        spieler.vy = -20
+    }
+
+    if (zeit >= 5000) {
+        starteB()
+    }
+})
+
+
+// ==========================================================
+// A ÄNDERT RICHTUNG
+// ==========================================================
+
+game.onUpdateInterval(
+    600,
+    function () {
+        if (phase != PHASE_A) {
+            return
+        }
+
+        spieler.vx =
+            randint(-35, 35)
+
+        spieler.vy =
+            randint(-20, 20)
+    }
+)
+
+
+// ==========================================================
+// B UPDATE
+// ==========================================================
+
+game.onUpdate(function () {
+    if (phase != PHASE_B) {
+        return
+    }
+
+    // Zeit hochzählen
+    let bZeit =
+        game.runtime() -
+        bStart
+
+    info.setScore(
+        Math.floor(
+            bZeit / 1000
+        )
+    )
+
+    // Blickrichtung merken
+    if (
+        controller.left.isPressed()
+    ) {
+        blickRichtung = -1
+    }
+
+    if (
+        controller.right.isPressed()
+    ) {
+        blickRichtung = 1
+    }
+
+    // B im Gang halten
+    if (spieler.y < 58) {
+        spieler.y = 58
+    }
+
+    if (spieler.y > 108) {
+        spieler.y = 108
+    }
+})
+
+
+// ==========================================================
+// PUTZFRAU VERFOLGT B
+// ==========================================================
+
+game.onUpdate(function () {
+    if (phase != PHASE_B) {
+        putzfrau.vx = 0
+        putzfrau.vy = 0
+        return
+    }
+
+    if (!putzfrauAktiv) {
+        putzfrau.vx = 0
+        putzfrau.vy = 0
+
+        if (
+            game.runtime() >=
+            putzfrauKommtWieder
+        ) {
+            putzfrauAktiv = true
+
+            putzfrau.setFlag(
+                SpriteFlag.Invisible,
+                false
+            )
+
+            putzfrau.setPosition(
+                15,
+                108
+            )
+
+            schutzBis =
+                game.runtime() + 2000
+        }
+
+        return
+    }
+
+    let dx =
+        spieler.x -
+        putzfrau.x
+
+    let dy =
+        spieler.y -
+        putzfrau.y
+
+    let tempo = 13
+
+    if (dx > 6) {
+        putzfrau.vx = tempo
+    } else if (dx < -6) {
+        putzfrau.vx = -tempo
+    } else {
+        putzfrau.vx = 0
+    }
+
+    if (dy > 6) {
+        putzfrau.vy = tempo
+    } else if (dy < -6) {
+        putzfrau.vy = -tempo
+    } else {
+        putzfrau.vy = 0
+    }
+})
+
+
+// ==========================================================
+// PUTZFRAU BERÜHRT B
+// ==========================================================
+
+sprites.onOverlap(
+    SpriteKind.Player,
+    SpriteKind.Putzfrau,
+    function () {
+
+        if (phase != PHASE_B) {
+            return
+        }
+
+        if (!putzfrauAktiv) {
+            return
+        }
+
+        if (
+            game.runtime() <
+            schutzBis
+        ) {
+            return
+        }
+
+        // Für Test noch kein Game Over
+        spieler.sayText(
+            "ERWISCHT!",
+            600,
+            false
+        )
+
+        spieler.setPosition(
+            80,
+            80
+        )
+
+        putzfrau.setPosition(
+            15,
+            108
+        )
+
+        schutzBis =
+            game.runtime() + 2500
+    }
+)
+
+
+// ==========================================================
+// A-TASTE = TÜR ERKENNEN
+// ==========================================================
+
+controller.A.onEvent(
+    ControllerButtonEvent.Pressed,
+    function () {
+
+        if (phase != PHASE_B) {
+            return
+        }
+
+        let tuer = ""
+
+        if (spieler.x < 28) {
+            tuer = "4A"
+        } else if (spieler.x < 55) {
+            tuer = "KUECHE"
+        } else if (spieler.x < 76) {
+            tuer = "LEHRER"
+        } else if (spieler.x < 100) {
+            tuer = "PUTZ"
+        } else if (spieler.x < 132) {
+            tuer = "BAD"
+        } else {
+            tuer = "4B"
+        }
+
+        spieler.sayText(
+            tuer,
+            600,
+            false
+        )
+    }
+)
+
+
+// ==========================================================
+// B-TASTE = KISSEN WERFEN
+// ==========================================================
+
+controller.B.onEvent(
+    ControllerButtonEvent.Pressed,
+    function () {
+
+        if (phase != PHASE_B) {
+            return
+        }
+
+        if (!hatKissen) {
+            spieler.sayText(
+                "KEIN KISSEN",
+                400,
+                false
+            )
+
+            return
+        }
+
+        hatKissen = false
+
+        let wurf =
+            sprites.createProjectileFromSprite(
+                img`
+                    . 1 1 1 1 .
+                    1 1 1 1 1 1
+                    1 1 1 1 1 1
+                    . 1 1 1 1 .
+                `,
+                spieler,
+                -blickRichtung * 120,
+                0
+            )
+
+        wurf.setKind(
+            SpriteKind.Wurf
+        )
+    }
+)
+
+
+// ==========================================================
+// KISSEN TRIFFT PUTZFRAU
+// ==========================================================
+
+sprites.onOverlap(
+    SpriteKind.Wurf,
+    SpriteKind.Putzfrau,
+    function (wurf, frau) {
+
+        if (phase != PHASE_B) {
+            return
+        }
+
+        wurf.destroy()
+
+        if (!putzfrauAktiv) {
+            return
+        }
+
+        putzfrauAktiv = false
+
+        frau.vx = 0
+        frau.vy = 0
+
+        frau.setFlag(
+            SpriteFlag.Invisible,
+            true
+        )
+
+        // 2 Minuten verschwunden
+        putzfrauKommtWieder =
+            game.runtime() +
+            120000
+
+        spieler.sayText(
+            "TREFFER!",
+            700,
+            false
+        )
+    }
+)
+
+
+// ==========================================================
+// START
+// ==========================================================
+
+starteA()
